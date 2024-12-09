@@ -1,0 +1,95 @@
+*{
+    font-family:  sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    
+    
+}
+.container .head{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container .head h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.container .content{
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+    border-spacing: 0;
+    
+}
+.table1,.table2,.table3{
+    width: 600px;
+    padding: 15px;
+    display: inline-block;
+    
+}
+table thead th{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    
+}
+table td{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+}
+table td p{
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    background-color: rgb(68, 175, 68);
+    padding: 15px 25px;
+    color: white;
+    text-transform: capitalize;
+
+}
+.sign{
+    padding: 35px;
+    background-color: rgba(207, 212, 218, 0.295);
+}
+table thead{
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.green{
+    background-color: rgb(68, 175, 68);
+}
+.number{
+    font-size: 30px;
+}
+.per{
+    font-size: 17px;
+}
+table:hover{
+    box-shadow: 0 0 20px 0 rgb(201, 192, 192);
+}
+@media(max-width:600px){
+.content{
+    flex-direction: column;
+}
+table{
+    width: 80%;
+}
+}
+@media(min-width:601px) and (max-width:800px){
+    .content{
+        flex-wrap: wrap;
+    }
+}
